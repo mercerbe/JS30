@@ -17,6 +17,11 @@ body {
   background-color: rgb(244,243,243);
 }
 
+.jumbotron {
+  background: rgba(0,0,0,0.4);
+  color: white;
+}
+
 .keys {
   display: flex;
   flex: 1;
@@ -55,4 +60,33 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+#footer {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  width: 100%;
+  position: absolute;
+  padding-top: 1%;
+  bottom: -371px;
+  left: 0;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  #footer {
+    bottom: -1000px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  #footer {
+    bottom: -800px;
+  }
+
 }
